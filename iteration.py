@@ -21,9 +21,9 @@ def callback(iter, t, latents):
             img.save(os.path.join(output_dir, f"{iter}.png"))
 
 prompt = "a photo of an astronaut riding a horse on mars"
-output_dir_1_4 = "/Users/mk7n23/Desktop/University of Southampton/COMP6228 - IRP/Practical/1_4_iter"
-output_dir_1_5 = "/Users/mk7n23/Desktop/University of Southampton/COMP6228 - IRP/Practical/1_5_iter"
-output_dir_2 = "/Users/mk7n23/Desktop/University of Southampton/COMP6228 - IRP/Practical/2_iter"
+output_dir_1_4 = "IRP_practical/1_4_iter"
+output_dir_1_5 = "IRP_practical/1_5_iter"
+output_dir_2 = "IRP_practical/2_iter"
 output_dirs = [output_dir_1_4, output_dir_1_5, output_dir_2]
 
 # -------------- Stable diffusion v1.4 -------------- #

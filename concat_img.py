@@ -35,11 +35,11 @@ names = ["1_4", "1_5", "2"]
 
 for i in range(3):
     # Get list of image paths
-    folder = f"/Users/mk7n23/Desktop/University of Southampton/COMP6228 - IRP/Practical/{folders[i]}/"
+    folder = f"IRP_practical/{folders[i]}/"
     image_paths = [os.path.join(folder, f) for f in os.listdir(folder) if f.endswith('.png')]
 
     image_paths.sort(key=sort_key)
     
     # Create and save image grid
     image = concat_images(image_paths, (512, 512), (2, 5))
-    image.save(os.path.join("/Users/mk7n23/Desktop/University of Southampton/COMP6228 - IRP/Practical/concat",f'con_{names[i]}.png'))
+    image.save(os.path.join("IRP_practical/concat",f'con_{names[i]}.png'))
